@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "paddock-extension",
+    "version": "1.0",
+    "description": "chrome extension for add paddock button to jra race card",
+    "icons": {
+        "128": "icons/horse_icon.jpg"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "https://www.jra.go.jp/JRADB/accessS.html" ],
+            "js": [ "scriptS.js" ]
+        },
+        {
+            "matches": [ "https://www.jra.go.jp/JRADB/accessD.html" ],
+            "js": [ "scriptD.js" ]
+        }
+    ],
+    "author": "yutorse"
+}
