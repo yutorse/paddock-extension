@@ -27,6 +27,6 @@ let raceNumber = raceInfo.split(" ")[1].slice(0, -3);
 url = url + year + "/" + year + month + day + "/" + year.slice(-2) + raceCourseId[kaisaiCourse] + kaisaiNumber + (Number(kaisaiDay).toString(16)) + (Number(raceNumber).toString(16)) + "_p&quality=4";
 
 let oddsButtonElement = document.getElementsByClassName("btn-def btn-sm blue btn-block")[0];
-let paddockButtonElement = `<li><a href=${url} class='btn-def btn-sm blue btn-block mt5'><i class='fa fa-chevron-circle-right'></i>パドック</a></li>`
+let paddockButtonElement = `<a href=${url} class='btn-def btn-sm blue btn-block mt5'><i class='fa fa-chevron-circle-right'></i>パドック</a>`
 
 oddsButtonElement.insertAdjacentHTML("afterend", paddockButtonElement);
