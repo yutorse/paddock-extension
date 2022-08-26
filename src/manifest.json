@@ -13,11 +13,11 @@
     },
     "content_scripts": [
         {
-            "matches": [ "https://www.jra.go.jp/JRADB/accessS.html" ],
+            "matches": [ "https://www.jra.go.jp/JRADB/accessS.html*" ],
             "js": [ "scriptS.js" ]
         },
         {
-            "matches": [ "https://www.jra.go.jp/JRADB/accessD.html" ],
+            "matches": [ "https://www.jra.go.jp/JRADB/accessD.html*" ],
             "js": [ "scriptD.js" ]
         }
     ],
