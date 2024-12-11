@@ -15,7 +15,7 @@ const raceCourseId = {
 
 const url = "https://regist.prc.jp/api/windowopen.aspx?target=race/";
 
-const raceInfo = document.getElementsByClassName("opt")[2].innerHTML;
+const raceInfo = document.getElementsByClassName("opt")[1].innerHTML;
 const year = raceInfo.split("年")[0];
 const month = ("0" + raceInfo.split("年")[1].split("月")[0]).slice(-2);
 const day = ("0" + raceInfo.split("年")[1].split("月")[1].split("日")[0]).slice(
